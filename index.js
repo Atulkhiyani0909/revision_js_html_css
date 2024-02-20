@@ -789,23 +789,198 @@ function three(){
    return two()+one();
 }
 
+
+
+
 //callback hell;
+div =document.querySelector("#division");
+
+
+
+
+function changecolor(color,delay,nextcolorchange){
+   setTimeout(()=>{
+      div.style.backgroundColor=color;
+      nextcolorchange();
+   },delay);
+   
+}
+
+//nesting callback in callback hell
+changecolor("red",1000,()=>{
+   changecolor("orange",1000,()=>{
+      changecolor("green",1000,()=>{
+         changecolor("yellow",1000,()=>{
+            changecolor("pink",1000);
+         })
+      });
+   })
+})
+
+
+//callback hell example
+
+function savetodb(data,success,failure){
+   let speed=Math.floor(Math.random()*10);
+if(speed>=4){
+   success();
+}
+else{
+   failure();
+}}
+
+//first if speed is >= 4 data 1 saved than on its success it will call the function second time and than on its success it will again call the function if data 1 not saved no calling of function takes palce and its same for 2 and 3 time calling of the function this makes the code messy and its call the CALLBACK HELL
+
+savetodb("Atul Khiyani",()=>{
+   console.log("Success data 1 saved");
+   savetodb("Atul",()=>{
+   console.log("success Data 2 saved");
+   savetodb("khiyani",()=>{
+      console.log("Success: data 3 saved ");
+   },()=>{
+      console.log("data 3 not saved");
+   })
+   },()=>{
+      console.log("data 2 not saved");
+   })
+},()=>{
+   console.log("data not saved weak connection");
+})
 
 
 
 
 
+//PROMISES
 
 
-// let greet1=function(func,count){
-//    for(i=0;i<count;i++){
-//       func();
-//    }
-// }
-// let greeting1=function(){
-//    console.log("Namaste Bharat");
-// }
-// // greet1(greeting1,100);
-// let greet3=greet1(greeting1,300);
-// let greet2=setTimeout(greet3,5000);
-// console.log(greet2);
+function savetodb2(data){
+return new Promise((resolve,reject)=>{
+   let speed=Math.floor(Math.random()*10)+1;
+   if(speed>4){
+      resolve("data saved");
+   }else{
+      reject("weak conection");
+   }
+})
+}
+
+savetodb2("Atul Khiyani")
+.then(()=>{
+   console.log("Promise resolved");
+})
+.catch(()=>{
+   console.log("Promise regected");
+})
+
+//promise channing
+console.log("Promise channing");
+savetodb2("Atul Khiyani")
+.then((result)=>{
+   console.log(result);
+   console.log("Promise resolved 1 saved");
+   return savetodb2("Khiyani's")
+})
+.then((result)=>{
+   console.log(result);
+   console.log("Promise resolved 2 saved")
+})
+.catch((error)=>{
+   console.log(error, " this is error");
+   console.log(" Some Promise regected");
+})
+
+
+
+//callbck hell change color code by promise
+function changing_color(color,delay){
+   return new Promise((resolve,rejected)=>{
+      setTimeout(()=>{
+         div.style.backgroundColor=color;
+         resolve("color changed success");
+      },delay);
+   });
+
+}
+changing_color("red",6000)
+.then(()=>{
+   console.log("red color");
+   return changing_color("black",1000);
+})
+.then(()=>{
+   console.log("black");
+   return changing_color("blue",1000);
+})
+.catch(()=>{
+   console.log("not solved");
+})
+
+
+//async function 
+//they by default return the promises
+async function hello2(){
+   return "hello";
+}
+
+hello2()
+.then(()=>{
+   console.log("successful");
+})
+.catch(()=>{
+   console.log("error");
+})
+
+
+//API's
+
+
+//JSON to JS 
+let json_data='{"activity":"Take a class at your local community center that interests you","type":"education","participants":1,"price":0,"link":"","key":"8750692","accessibility":0.15}';
+
+ console.log(json_data);
+
+ let valid=JSON.parse(json_data);
+
+//asynchronous call
+
+ let url=`https://catfact.ninja/fact`;
+
+fetch(url)
+.then((res)=>{
+console.log(res);
+
+return res.json();
+})
+.then((data)=>{
+   console.log(data.fact);
+   return fetch(url);
+})
+.then((res)=>{
+   return res.json();
+})
+.then((data2)=>{
+   console.log(data2.fact);
+})
+.catch((err)=>{
+   console.log(err);
+})
+
+//using fetch with async and await
+let url1=`https://catfact.ninja/fact`;
+
+async function getcats(){
+   try{
+   let res =await fetch(url1);
+   let data =await res.json();
+   console.log(data.fact);
+   console.log(res);
+
+   let res1 =await fetch(url1);
+   let data1 =await res1.json();
+   console.log(data1.fact);
+   console.log(res1);
+}
+catch(err){
+console.log(err);
+}
+}
