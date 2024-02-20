@@ -1,0 +1,150 @@
+#div{
+      display: flex;
+      justify-content: space-evenly;
+      background-color: rgb(202, 79, 79);
+ 
+    height: 40px;
+    width: 500px;
+}
+table{
+  border: 3px solid black !important;
+}
+th,th,td{
+  
+  border: 2px solid rgb(50,9,20);
+  padding: 10px;
+  
+}
+h1{
+  opacity: 1;
+  background-color: rgba(28, 156, 199,0.4);
+  /* a is given as alpha channel that decide the opacity of the color or visibility of the color from 0 to 1 only in decimal
+    */
+}
+h1:hover{
+  opacity: 0.8;
+  transition: 1s;
+}
+#shape{
+  width: 50px;
+  height: 50px;
+  background-image: url("https://yt3.googleusercontent.com/ytc/AIf8zZS6XDo-M7dlTyolU_yBAp-cmqn0EfZ8AGkKa9yItg=s900-c-k-c0x00ffffff-no-rj");
+  background-size: contain;/*cover,auto,contain*/ 
+  /* cover is best */
+  margin: 0 auto;
+  transition: margin-top 2s ease 0.7s;
+ 
+  
+
+}
+#shape:hover{
+margin-top: 200px;
+
+}
+#shape2{
+  width: 50px;
+  height: 50px;
+  background-color: rgb(0, 9, 0);
+ 
+  transition: margin-top 2s ease 0.7s;
+ transition: 1s;
+  
+
+}
+#shape2:hover{
+  transform: rotate(45deg);
+  transform: scale(0.5,1.5);
+  transform: translate(150px,150px);
+  transform: skew(50deg);
+  transform: rotate(45deg) translate(50px,45px);
+  transform: matrix(1, 2, 3, 4, 5, 6);
+transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+transform: perspective(17px);
+transform: rotate(0.5turn);
+transform: rotate3d(1, 2, 3, 10deg);
+transform: rotateX(10deg);
+transform: rotateY(10deg);
+transform: rotateZ(10deg);
+transform: translate(12px, 50%);
+transform: translate3d(12px, 50%, 3em);
+transform: translateX(2em);
+transform: translateY(3in);
+transform: translateZ(2px);
+transform: scale(2, 0.5);
+transform: scale3d(2.5, 1.2, 0.3);
+transform: scaleX(2);
+transform: scaleY(0.5);
+transform: scaleZ(0.3);
+transform: skew(30deg, 20deg);
+transform: skewX(30deg);
+transform: skewY(1.07rad);
+  
+  }
+
+/* Flex Wrap*/
+/*Nowwrap
+wrap
+wrap-reverse*/
+
+/*align-self
+align-items
+align-content*/
+
+/*
+display grid
+*/
+
+#wrapper{
+  width: 700px;
+  height: 355px;
+  background-color: black;
+  display: grid;
+  grid-template-rows: 60px 60px 60px 60px 60px 60px 60px ;
+  grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+  grid-gap: 11px;
+  /*grid-template-rows:repeat(5,1fr);
+  grid-template-columns:repeat(3,1fr);*/
+  /*grid-colums:start_col/end_col*/
+  /*grid-row:start_col/end_col*/
+  /*justify-item*/
+  /*justify-self*/
+  /*
+  align-item
+  align-self*/
+
+
+  /*ANIMATION IN CSS*/
+/*@keyframes animationname{
+  from{
+  }
+  to{
+  }
+}*/
+
+
+/*Z index*/
+}
+#item{
+
+  background-color: greenyellow;
+  border: 2px solid black;
+  border-radius: 15px;
+  
+}
+#colors{
+  height: 100px;
+  width: 550px;
+  border: 1.5px solid black;
+  margin: auto;
+  border-radius: 15px;
+}
+#generate{
+  text-align: center;
+  padding: 7px;
+  margin: auto;
+  margin-left: 300px;
+  
+}
+#color_val{
+  text-align: center;
+}

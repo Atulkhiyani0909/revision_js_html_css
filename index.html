@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Revision</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="index.css">
+      
+</head>
+<body >
+      <!-- oncontextmenu="return  false" -->
+      <p >Hello world this is the <b>img using bold tag</b>  img Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium velit minima commodi dicta maxime asperiores laborum fuga ipsum animi dolor est quam et, pariatur modi expedita quidem porro ducimus maiores!</p>
+
+      <h1>Heading in html</h1>
+      <h3>there are 6 types of heading int he html h1 to h6 decreasing in the size as we come down </h3>
+
+<h1>Avengers</h1>
+<h2>iron man</h2>
+<p>Also goes by the name of the tony stark</p>
+<h2>captian america</h2>
+<p>also goes by the name steve rogers </p>
+<h2>Hulk</h2>
+<p>also goes by the name Bruce Banner</p>
+
+
+      <h1>lists in html</h1>
+      <ul>
+            <li>This is the <b>unordered </b>list</li>
+            <li>apple</li>
+            <li>mango</li>
+            <li>banana</li>
+            <li>orange</li>
+      </ul>
+
+      <ol type="A">
+<!-- type is the type of attribute we want to give it to its sequnce -->
+            <li>This is the <b>ordered </b>list</li>
+            <li>apple</li>
+            <li>mango</li>
+            <li>banana</li>
+            <li>orange</li>
+      
+</ol>
+
+<h1>Anchor tag this is used to add link on the page </h1>
+<a href="https://www.google.com/search?q=google&oq=google&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMhgIARAuGEMYgwEYxwEYsQMY0QMYgAQYigUyBggCEEUYQDIGCAMQRRg7MhIIBBAAGEMYgwEYsQMYgAQYigUyEggFEAAYQxiDARixAxiABBiKBTISCAYQABhDGIMBGLEDGIAEGIoFMhIIBxAAGEMYgwEYsQMYgAQYigWoAgCwAgA&sourceid=chrome&ie=UTF-8"> <b>Google </b></a>
+      
+
+<h1> Img tag </h1>
+<h3>Ram mandir</h3>
+<img src="https://akm-img-a-in.tosshub.com/lingo/gnt/images/story/202309/raamamandaira11-sixteen_nine.jpg?size=650:533" alt="temple" width="650px" height="500px">
+
+<!-- <br> -->
+<!-- this is used for line break -->
+<br>
+<br><br>
+<b>bold tag</b><br>
+<i>itallic tag </i><br>
+<u>underline tag</u>
+<br><br><br>
+<div id="div">
+      <!-- content division element -->
+      <a href="">Click me 1 </a>
+      <a href="">Click me 2</a>
+      <a href="">Click me 3</a>
+      <a href="">Click me 4</a>
+      <a href="">Click me 5</a>
+      <a href="">Click me 6</a>
+
+</div>
+<hr><hr>
+<!-- horizim=ntal ruler make line on the page -->
+<h1>sub and sup tag</h1>
+<p>a² + b² = (a -b)² + 2ab</p>
+<p>H<sub>2</sub>O</p>
+<p>a<sup>2</sup> + b<sup>2</sup></p>
+<header><main>header tag top of the website</main></header>
+<main>this is main content</main>
+<nav>navigation tag</nav>
+<header>
+      <nav>
+            <h2>navigation inside header tag</h2>
+            <ul><li><a href="">About us</a></li>
+            <li><a href="">contact us</a></li></ul>
+      </nav>
+</header>
+<section>section tag</section>
+<article>article tag</article>
+<aside>aside tag</aside>
+<h2>html entities</h2>
+<p>a&lt;b</p>
+<p>a&gt;b</p>
+<p>this is &nbsp;&nbsp;me</p>
+<p>&heartsuit;;</p>
+<p>&amp;</p>
+<p>&quot;</p>
+<p>&bigstar;</p>
+<p>&uarr;</p>
+<h1>Parent child relation in html </h1>
+<h3>paragraph tag (parent) &rArr; image tag (child) </h3> paragraph tag contains image that is why
+<p>
+      <div></div>
+      <img src="" alt="image">
+</p>
+<!-- p>div+img  to generate above code -->
+<p>
+      <div>
+            <ul>
+                  <li></li>
+            </ul>
+      </div>
+</p>
+<!-- p>div>ul>li to generate above code -->
+<p>
+      <div>
+            <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+            </ul>
+      </div>
+</p>
+<!-- p>div>ul>li*4 to enerate above code -->
+<p>
+      <ol>
+            <li id="items">i1</li>
+            <li id="items">i2</li>
+            <li id="items">i3</li>
+            <li id="items">i4</li>
+            <li id="items">i5</li>
+      </ol>
+</p>
+<!-- p>ol>li#items*5 to enerate above code -->
+<h1>Video tag in html</h1>
+      <video controls autoplay  loop playsinline style="border-radius: 50%; width: 300px; height: 300px;"> 
+            <source src="istockphoto-1455772765-640_adpp_is.mp" type="video/mp4">
+      </video>
+
+         
+<!-- if we remove controls than it will remove all the controls from the video and if we remove autoplay it stops the video after playing it we have to pla it again  -->
+
+<h1>Tables in html </h1>
+<table >
+      <caption >Food Menu</caption>
+      <!-- table header -->
+      <thead>
+         <tr >
+      <th rowspan="1" colspan="1">Items</th>
+      <th>Price</th>
+      <th>Token-Number</th>
+</tr>   
+      </thead>
+
+<tr>
+      <td >Frooti</td>
+      <td>10</td>
+      <td>1001</td>
+</tr>
+<tr>
+      <td>Samosa</td>
+      <td>15</td>
+      <td>1002</td>
+
+</tr>
+<tr>
+      <td>Chips</td>
+      <td>20</td>
+      <td>1003</td>
+</tr>
+<tr>
+      <td>Pasta</td>
+      <td>60</td>
+      <td>1004</td>
+</tr>
+<tr>
+      <td>Noodles</td>
+      <td>70</td>
+      <td>1005</td>
+</tr>
+<tr>
+      <td>Coffee</td>
+      <td>15</td>
+      <td>1006</td>
+</tr>
+<tfoot>
+      <tr>
+            <!-- use of colspan and rowspan in html table -->
+            <td>Total Price &nbsp;</td>
+            <td rowspan="1" colspan="2" style="text-align: center;">190</td>
+            
+      </tr>
+</tfoot>
+</table>
+<br>
+<h1>Forms in Html</h1>
+<form action="/server">
+<!-- action defines what action to be taken after submit the form  if file is in our system in use /and file name -->
+
+      <input type="file"  name="file"> 
+      <!-- lable without using for -->
+<label >
+      Name <input type="text" placeholder="Enter your Name " name="user-name"> </label>
+<br><br>
+<!-- label using for -->
+<label for="password">Enter Your Password</label>
+<input type="password" placeholder="enter password" id="password" name="password" required><br><br>
+
+<Button type="submit">Open Google</Button>
+<!-- Creating button with input element -->
+<input type="submit" value="Click me">
+</form>
+<br>
+<!-- search in youtube  -->
+<form action="https://www.youtube.com/results?">
+      <input type="text" placeholder="search in youtube" name="search_query">
+      <button type="submit">Search</button>
+</form>
+<br>
+<form action="https://www.google.com/search">
+     <input type="text" name="q" placeholder="search in Google">
+      <button type="submit">Search</button>
+</form>
+<br>
+<input type="checkbox" name="age" id="age" checked>
+<!-- checked already checked when we go to the webpage -->
+<label for="age">18 + Adults only</label>
+
+<br>
+<form action="/server1">
+<input type="radio" id="apple" name="fruit" value="apple">
+<label for="apple">Apple</label>
+<input type="radio" id="mango" name="fruit" value="mango">
+<label for="mango">Mango</label>
+<input type="radio" id="orange" name="fruit" value="orange">
+<label for="orange">orange</label>
+<input type="radio" id="grapes" name="fruit" value="grapes">
+<label for="grapes">grapes</label>
+<input type="radio" id="banana" name="fruit" value="banana">
+<label for="banana">banana</label>
+<button>Submit</button>
+</form>
+<br>
+<br>
+<!-- select in html also known as the dropdown-->
+<form action="/server2">
+     
+<select name="state" id="state">
+      <option value="notselcted" selected>Select Your State</option>
+      <option value="madhyapradesh">MadhyaPradesh</option>
+      <option value="uttarpradesh">UttarPradesh</option>
+      <option value="Andrapradesh">AndraPradesh</option>
+      <option value="Arunachalpradesh">ArunchalPradesh</option>
+</select>
+<button>Submit</button>
+</form>
+
+<br><br>
+<form action="/server4">
+
+<label for="volume">Range input element</label>
+<input type="range" id="volume" min="0" max="100" value="70" name="VOL">
+<button>Submit</button>
+</form>
+<br><br>
+
+<div id="shape"></div>
+<div id="shape2"></div>
+
+<br><br>
+<h1>Display Grid CSS</h1>
+<div id="wrapper">
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+<div id="item"></div>
+
+
+</div>
+<button id="but">Button Function</button>
+<br><br>
+<h1>Bootstrap </h1>
+<button class="btn btn-warning">Click me</button><br>
+<div class="card" style="width: 18rem;">
+      <img src="https://akm-img-a-in.tosshub.com/lingo/gnt/images/story/202309/raamamandaira11-sixteen_nine.jpg?size=650:533" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div><br>
+    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search">
+          </form> -->
+     <br><br>
+    <button class="btn btn-outline-success" id="onclick">Click me</button><br><br><br>
+    <button type="button" class="btn btn-primary position-relative">
+      Inbox
+      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        5+
+        <span class="visually-hidden">unread messages</span>
+      </span>
+    </button><br><br><br>
+    <div id="liveAlertPlaceholder"></div>
+<button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button><br><br><br>
+<h1>footer of the page</h1><br><br><br>
+<button class="btn btn-primary" type="button" disabled>
+      <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
+      <span class="visually-hidden" role="status">Loading...</span>
+    </button>
+    <button class="btn btn-primary" type="button" disabled>
+      <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
+      <span role="status">Loading...</span>
+    </button><br><br><br>
+    <div id="time">Date</div>
+
+<footer>Made with &hearts;</footer>
+
+<br><br><br><br>
+
+<h2 style="text-align: center;">Generate Colors</h2>
+<p id="color_val"></p>
+<div id="colors"></div><br>
+<button id="generate">Generate Color</button><br><br>
+<h4 id="heading10">Color change by using this </h4>
+
+<form action="/action" id="form2">
+<input type="text" id="input@" required placeholder="user-name">
+<input type="password" id="pass@" required placeholder="password" >
+<button>Register</button>
+</form>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
+<script src="index.js"></script>
+</body>
+</html>
